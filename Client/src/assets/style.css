@@ -1,0 +1,13 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

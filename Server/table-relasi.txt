@@ -1,0 +1,61 @@
+Table dan relasinya:
+
+Table User
+- imageUrl : string
+- name: string
+- email: string
+- username : string
+- password: string
+- address : text
+- phonenumber : string
+- role: string
+
+Table Category
+- name
+
+Table Ticket
+- type
+- stock
+- price
+- EventId: integer (fk)
+
+Table Transaction
+- UserId: integer(fk)
+- EventId: integer(fk)
+- totalTicket: integer
+- ticketType: string
+- totalPrice: integer
+
+Table MyEvent
+- UserId: integer(fk)
+- EventId: integer(fk)
+- status: string
+
+Table Event
+- imageUrl : string
+- startDate : date
+- endDate: date
+- eventName : string
+- CategoryId: integer(fk)
+- address: text
+- country: string
+- province: string
+- city: string
+- postal code: string
+- latitude: string
+- longitude: string
+- description: text
+
+MongoDB:
+Collection Messages
+- senderId
+- receiverId
+- messageContent
+- timestamp
+- status (read/unread)
+
+Collection Notifications
+- userId
+- notificationContent
+- timestamp
+- status (read/unread)
